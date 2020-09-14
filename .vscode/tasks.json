@@ -1,0 +1,52 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: g++.exe build main.cpp",
+			"command": "C:\\TDM-GCC-64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-o",
+				"${workspaceFolder}\\bin\\server.exe",
+				"-I",
+				"${workspaceFolder}\\include",
+				// "-L",
+				// "C:\\TDM-GCC-64\\x86_64-w64-mingw32\\lib",
+				// "-l",
+				// "\"C:\\TDM-GCC-64\\x86_64-w64-mingw32\\lib\\libws2_32.a\"",
+				"${workspaceFolder}\\main.cpp",
+				"${workspaceFolder}\\src\\tcpserver_class.cpp",
+				"\"C:\\TDM-GCC-64\\x86_64-w64-mingw32\\lib\\libws2_32.a\""
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "C/C++: g++.exe build test_server.cpp",
+			"command": "C:\\TDM-GCC-64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-o",
+				"${workspaceFolder}\\bin\\test_server.exe",
+				"${workspaceFolder}\\src\\test_server.cpp",
+				"\"C:\\TDM-GCC-64\\x86_64-w64-mingw32\\lib\\libws2_32.a\""
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	]
+}
