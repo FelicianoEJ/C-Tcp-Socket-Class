@@ -1,4 +1,4 @@
-# C-Tcp-Socket-Class
+# CPP-Tcp-Socket-Class
 The project main purpose is to establish a OOP approach into Winsock 2 socket programming for the TCP standard. (Windows Only)
 
 * The repo contains the include header file ``tcpserver.h`` and the class implementation as ``tcpserver_class.cpp``
